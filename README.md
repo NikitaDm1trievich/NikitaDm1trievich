@@ -1,0 +1,7 @@
+- 👋 Hi, I’m Никита
+- 👀 I’m interested in 1С
+- 🌱 I’m currently learning 1С
+- 💞️ I’m looking to collaborate on 1С
+- 📫 How to reach me 1С
+- 😄 Pronouns: 1С
+- ⚡ Fun fact: 1ss
