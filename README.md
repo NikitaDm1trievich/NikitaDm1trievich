@@ -120,7 +120,7 @@
 ## Контакты
 
 - GitHub: [@NikitaDm1trievich](https://github.com/NikitaDm1trievich)
-- Email: [grigorjanworks@gmail.com](mailto:grigorianworks@gmail.com)
+- Email: [grigorianworks@gmail.com](mailto:grigorianworks@gmail.com)
 
 > Открыт к профессиональному общению, обмену опытом и участию в технически содержательных проектах.
 
