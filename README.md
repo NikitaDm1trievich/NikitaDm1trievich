@@ -1,133 +1,68 @@
 <div align="center">
 
-# Nick
-
-### 1С-разработчик · Backend и интеграции · Корпоративные системы
-
-Разрабатываю и сопровождаю бизнес-критичные решения на платформе 1С:Предприятие.  
-Развиваюсь в сторону универсального разработчика-архитектора корпоративных систем.
-
-[Русский](README.md) · [English](README.en.md)
-
-</div>
-
----
-
-## Обо мне
-
-Я 1С-разработчик с коммерческим опытом около 3 лет.
-
-Разрабатываю и сопровождаю бизнес-критичные решения на платформе 1С:Предприятие, включая расширения конфигураций, HTTP-сервисы, интеграции и backend для native-мобильных приложений.
-
-Работаю со сложной бизнес-логикой и связанными между собой подсистемами. Особое внимание уделяю надёжности, сопровождаемости и сохранению существующего поведения при изменениях.
-
-## Технологии и инструменты
-
-<p>
-  <img src="https://img.shields.io/badge/1С:Предприятие-8.3+-E31E24?style=flat-square" alt="1С:Предприятие 8.3+">
-  <img src="https://img.shields.io/badge/BSL-встроенный_язык-3F6B96?style=flat-square" alt="BSL">
-  <img src="https://img.shields.io/badge/Расширения-конфигураций-E31E24?style=flat-square" alt="Расширения конфигураций 1С">
-  <img src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" alt="Microsoft SQL Server">
-  <img src="https://img.shields.io/badge/REST_API-005571?style=flat-square" alt="REST API">
-  <img src="https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white" alt="JSON">
-  <img src="https://img.shields.io/badge/Backend-2F81F7?style=flat-square" alt="Backend development">
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub">
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell">
-  <img src="https://img.shields.io/badge/Mobile_Integrations-3DDC84?style=flat-square" alt="Mobile integrations">
-  <img src="https://img.shields.io/badge/HTTP_Services-0A66C2?style=flat-square" alt="HTTP services">
-  <img src="https://img.shields.io/badge/AI--assisted_Development-412991?style=flat-square&logo=openai&logoColor=white" alt="AI-assisted development">
-</p>
-
-## Чем я занимаюсь
-
-- Разрабатываю и сопровождаю расширения конфигураций 1С.
-- Проектирую HTTP-сервисы, REST API и обмен данными в формате JSON.
-- Интегрирую 1С с native-мобильными приложениями и внешними системами.
-- Работаю с управляемыми формами, общими модулями, модулями объектов и менеджеров.
-- Проектирую запросы 1С, отчёты и схемы компоновки данных.
-- Исследую сложные цепочки вызовов и скрытые побочные эффекты.
-- Рефакторю legacy-код с сохранением существующей бизнес-логики.
-- Диагностирую проблемы производительности и лишние серверные вызовы.
-- Автоматизирую разработку и анализ кода с помощью AI-инструментов.
-
-## Профессиональный фокус
-
-```text
-Действие пользователя
-        ↓
-Клиентская и серверная логика
-        ↓
-Бизнес-операции и данные
-        ↓
-Фоновые процессы и интеграции
-        ↓
-Измеримый бизнес-результат
-```
-
-Мои сильные стороны:
-
-- запросы 1С и СКД;
-- интеграции и HTTP-сервисы;
-- рефакторинг и повышение читаемости кода;
-- разделение клиентской и серверной логики;
-- трассировка сложных цепочек выполнения;
-- анализ бизнес-процессов и состояний данных;
-- безопасная доработка критичных систем;
-- надёжность и сопровождаемость решений.
-
-## Архитектурные интересы
-
-- архитектура корпоративных информационных систем;
-- проектирование крупных функциональных блоков;
-- 1С как backend для мобильных и web-приложений;
-- устойчивые интеграции и версионирование API;
-- асинхронная обработка и фоновые задания;
-- наблюдаемость и диагностика систем;
-- инфраструктура, развёртывание и эксплуатация;
-- применение AI-агентов в инженерных процессах.
-
-## Сейчас развиваю
-
-- проектирование надёжных API и распределённых интеграций;
-- backend- и web-разработку;
-- инфраструктуру, развёртывание и эксплуатацию систем;
-- диагностику производительности;
-- практики AI-assisted development.
-
-## GitHub-статистика
-
-<details>
-<summary>Показать статистику публичного профиля</summary>
+<img src="assets/banner.svg" alt="Welcome to Nick's GitHub" width="100%">
 
 <br>
 
-> Статистика отражает только публичную активность GitHub и не характеризует весь коммерческий опыт.
+<a href="mailto:grigorianworks@gmail.com"><img src="https://img.shields.io/badge/Почта-000000?style=for-the-badge&logo=gmail&logoColor=white" alt="Почта"></a> <a href="https://github.com/NikitaDm1trievich"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="README.en.md"><img src="https://img.shields.io/badge/English-000000?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English"></a>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=NikitaDm1trievich&show_icons=true&hide_title=true&hide_rank=true&include_all_commits=false&theme=github_dark&border_color=30363d">
-    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats.vercel.app/api?username=NikitaDm1trievich&show_icons=true&hide_title=true&hide_rank=true&include_all_commits=false&theme=default&border_color=d0d7de">
-    <img src="https://github-readme-stats.vercel.app/api?username=NikitaDm1trievich&show_icons=true&hide_title=true&hide_rank=true&include_all_commits=false" alt="Статистика GitHub-профиля NikitaDm1trievich" height="165">
-  </picture>
+## 👨‍💻 Обо мне
+
+<table>
+  <tr>
+    <td width="62%" valign="middle">
+      Привет! Я <b>Nick</b> — 1С-разработчик с коммерческим опытом около 3 лет. Разрабатываю и сопровождаю бизнес-критичные решения на платформе 1С:Предприятие: расширения конфигураций, HTTP-сервисы, интеграции и backend для native-мобильных приложений. Развиваюсь в сторону универсального разработчика-архитектора корпоративных систем.
+      <br><br>
+      <p align="center">
+      <b>🏢 Бизнес-критичные системы на 1С:Предприятие</b><br>
+      <b>🔌 HTTP-сервисы, REST API и интеграции</b><br>
+      <b>📱 Backend для мобильных и web-приложений</b><br>
+      <b>🤖 AI-assisted development</b><br>
+      <b>📍 Москва</b>
+      </p>
+    </td>
+    <td width="38%" align="center" valign="middle">
+      <img src="assets/space.svg" alt="" width="220">
+    </td>
+  </tr>
+</table>
+
+## ⚙️ Технологии
+
+<p>
+  <img src="https://img.shields.io/badge/1С:Предприятие-000000?style=for-the-badge" alt="1С:Предприятие">
+  <img src="https://img.shields.io/badge/BSL-000000?style=for-the-badge" alt="BSL">
+  <img src="https://img.shields.io/badge/Microsoft_SQL_Server-000000?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="Microsoft SQL Server">
+  <img src="https://img.shields.io/badge/REST_API-000000?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST API">
+  <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
+  <img src="https://img.shields.io/badge/PowerShell-000000?style=for-the-badge" alt="PowerShell">
+</p>
+<p>
+  <img src="https://img.shields.io/badge/Go-000000?style=for-the-badge&logo=go&logoColor=white" alt="Go">
+  <img src="https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/C++-000000?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/Astro-000000?style=for-the-badge&logo=astro&logoColor=white" alt="Astro">
+  <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </p>
 
-</details>
+## 📈 Статистика
 
-## Контакты
+<table>
+  <tr>
+    <td><img src="assets/stats.svg" alt="Статистика GitHub" height="170"></td>
+    <td><img src="https://streak-stats.demolab.com?user=NikitaDm1trievich&background=0d1117&border=30363d&stroke=30363d&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub streak" height="170"></td>
+  </tr>
+</table>
 
-- GitHub: [@NikitaDm1trievich](https://github.com/NikitaDm1trievich)
-- Email: [grigorianworks@gmail.com](mailto:grigorianworks@gmail.com)
+<img src="assets/graph.svg" alt="График активности" width="100%">
 
-> Открыт к профессиональному общению, обмену опытом и участию в технически содержательных проектах.
+<sub>Статистика отражает только публичную активность GitHub и не характеризует весь коммерческий опыт.</sub>
 
 ---
 
-<div align="center">
-
-Надёжность начинается с понимания бизнес-процесса, данных и последствий каждого изменения.
+<i>Надёжность начинается с понимания бизнес-процесса, данных и последствий каждого изменения.</i>
 
 </div>

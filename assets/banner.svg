@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Welcome to Nick's GitHub">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9a9a9a"/>
+      <stop offset="0.45" stop-color="#e6e6e6"/>
+      <stop offset="0.62" stop-color="#bdbdbd"/>
+    </linearGradient>
+    <linearGradient id="d1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a5a5a"/>
+      <stop offset="1" stop-color="#2a2a2a"/>
+    </linearGradient>
+    <linearGradient id="d2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3a3a"/>
+      <stop offset="1" stop-color="#151515"/>
+    </linearGradient>
+    <linearGradient id="d3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#222"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9d9d9"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#sky)"/>
+
+  <!-- far dunes -->
+  <path d="M0 205 C120 185 220 170 340 188 C460 206 540 176 660 172 C800 168 900 196 1020 186 C1100 180 1160 176 1200 180 L1200 320 L0 320Z" fill="url(#d1)" filter="url(#soft)"/>
+  <!-- middle dunes -->
+  <path d="M0 238 C140 214 260 226 380 240 C520 256 620 218 760 214 C900 210 1000 242 1200 228 L1200 320 L0 320Z" fill="url(#d2)"/>
+  <!-- near dunes -->
+  <path d="M0 272 C160 250 300 262 440 282 C580 302 700 268 860 262 C1000 256 1100 280 1200 272 L1200 320 L0 320Z" fill="url(#d3)"/>
+
+  <!-- winding path -->
+  <path d="M640 196 C600 204 560 210 590 220 C640 236 700 238 640 252 C560 270 470 280 560 296 C620 308 700 312 760 320 L600 320 C520 306 430 290 520 270 C590 254 610 244 575 234 C530 222 560 206 640 196Z" fill="url(#river)" opacity="0.92"/>
+
+  <!-- title -->
+  <g font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" fill="#111" text-anchor="middle">
+    <text x="600" y="92" font-size="40" letter-spacing="2">Welcome to Nick's GitHub</text>
+    <text x="600" y="138" font-size="30">&lt;/&gt;
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
