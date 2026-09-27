@@ -37,7 +37,7 @@
   <path d="M640 196 C600 204 560 210 590 220 C640 236 700 238 640 252 C560 270 470 280 560 296 C620 308 700 312 760 320 L600 320 C520 306 430 290 520 270 C590 254 610 244 575 234 C530 222 560 206 640 196Z" fill="url(#river)" opacity="0.92"/>
 
   <!-- title -->
-  <g font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" fill="#111" text-anchor="middle">
+  <g font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,'DejaVu Sans Mono',monospace" fill="#111" text-anchor="middle">
     <text x="600" y="92" font-size="40" letter-spacing="2">Welcome to Nick's GitHub</text>
     <text x="600" y="138" font-size="30">&lt;/&gt;
       <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/>

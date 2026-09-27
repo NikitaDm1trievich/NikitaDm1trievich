@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" font-family="'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,'DejaVu Sans Mono',monospace">
   <rect x="0.5" y="0.5" width="899" height="299" rx="4.5" fill="#0d1117" stroke="#30363d"/>
   <text x="450.0" y="30" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="600">Nick's Contribution Graph</text>
   <line x1="60" x2="880" y1="250.0" y2="250.0" stroke="#21262d"/><line x1="60" x2="880" y1="200.0" y2="200.0" stroke="#21262d"/><line x1="60" x2="880" y1="150.0" y2="150.0" stroke="#21262d"/><line x1="60" x2="880" y1="100.0" y2="100.0" stroke="#21262d"/><line x1="60" x2="880" y1="50.0" y2="50.0" stroke="#21262d"/>

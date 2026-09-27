@@ -10,16 +10,14 @@
 
 <table>
   <tr>
-    <td width="62%" valign="middle">
-      Hi there! I'm <b>Nick</b> — a 1C developer with about 3 years of commercial experience. I build and maintain business-critical solutions on the 1C:Enterprise platform: configuration extensions, HTTP services, integrations and backends for native mobile apps. My long-term direction is becoming a versatile developer and enterprise systems architect.
+    <td width="62%" valign="middle" align="left">
+      Hi there! I'm <b>Nick</b>, a developer. Right now I'm building <b>Astranet</b> — a social platform with communities, chats, a feed and voice rooms: a Go backend, a Flutter client for iOS, Android and web, and a React web client. I also build websites with Astro and set up the infrastructure myself: GitLab, CI/CD, Docker.
       <br><br>
-      <p align="center">
-      <b>🏢 Business-critical systems on 1C:Enterprise</b><br>
-      <b>🔌 HTTP services, REST APIs and integrations</b><br>
-      <b>📱 Backends for mobile and web apps</b><br>
-      <b>🤖 AI-assisted development</b><br>
+      <b>🚀 <a href="https://github.com/AstranetApp">Astranet</a> — Go · Flutter · React</b><br>
+      <b>🦷 <a href="https://github.com/NikitaDm1trievich/dentalcruise">Clinic website</a> on Astro</b><br>
+      <b>🦊 Deploying self-hosted GitLab, runners and CI/CD</b><br>
+      <b>🏗️ 1C: architecture solutions from scratch, turnkey</b><br>
       <b>📍 Moscow</b>
-      </p>
     </td>
     <td width="38%" align="center" valign="middle">
       <img src="assets/space.svg" alt="" width="220">
@@ -30,20 +28,23 @@
 ## ⚙️ Technologies
 
 <p>
-  <img src="https://img.shields.io/badge/1С:Предприятие-000000?style=for-the-badge" alt="1С:Предприятие">
-  <img src="https://img.shields.io/badge/BSL-000000?style=for-the-badge" alt="BSL">
-  <img src="https://img.shields.io/badge/Microsoft_SQL_Server-000000?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="Microsoft SQL Server">
-  <img src="https://img.shields.io/badge/REST_API-000000?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST API">
-  <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
-  <img src="https://img.shields.io/badge/PowerShell-000000?style=for-the-badge" alt="PowerShell">
-</p>
-<p>
   <img src="https://img.shields.io/badge/Go-000000?style=for-the-badge&logo=go&logoColor=white" alt="Go">
   <img src="https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white" alt="React">
+  <img src="https://img.shields.io/badge/Flutter-000000?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-000000?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+  <img src="https://img.shields.io/badge/Astro-000000?style=for-the-badge&logo=astro&logoColor=white" alt="Astro">
+</p>
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
   <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/C++-000000?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
-  <img src="https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/Astro-000000?style=for-the-badge&logo=astro&logoColor=white" alt="Astro">
+  <img src="https://img.shields.io/badge/1C:Enterprise-000000?style=for-the-badge" alt="1C:Enterprise">
+</p>
+<p>
+  <img src="https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/GitLab_(self--hosted)-000000?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab (self-hosted)">
+  <img src="https://img.shields.io/badge/GitLab_CI-000000?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab CI">
   <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" alt="Git">
   <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </p>
@@ -63,6 +64,6 @@
 
 ---
 
-<i>Reliability starts with understanding the business process, the data and the consequences of every change.</i>
+<i>Reliability starts with understanding the data and the consequences of every change.</i>
 
 </div>

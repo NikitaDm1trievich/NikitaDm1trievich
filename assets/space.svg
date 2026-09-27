@@ -25,7 +25,7 @@
     </g>
   </g>
 
-  <text x="150" y="276" text-anchor="middle" font-family="Consolas,'Courier New',monospace" font-size="13" fill="#888">
+  <text x="150" y="276" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#888">
     &gt; building_<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </text>
 </svg>

@@ -13,7 +13,7 @@ TOKEN = os.environ["GITHUB_TOKEN"]
 OUT = os.path.join(os.path.dirname(__file__), "..", "assets")
 
 BG, BORDER, FG, MUTED, GRID = "#0d1117", "#30363d", "#ffffff", "#c9d1d9", "#21262d"
-FONT = "'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif"
+FONT = "'JetBrains Mono','Cascadia Code','Fira Code',Consolas,'DejaVu Sans Mono',monospace"
 
 QUERY = """
 query($login: String!, $from: DateTime!) {
