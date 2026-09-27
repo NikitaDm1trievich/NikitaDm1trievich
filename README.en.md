@@ -54,7 +54,7 @@
 <table>
   <tr>
     <td><img src="assets/stats.svg" alt="GitHub stats" height="170"></td>
-    <td><img src="https://streak-stats.demolab.com?user=NikitaDm1trievich&background=0d1117&border=30363d&stroke=30363d&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub streak" height="170"></td>
+    <td><img src="assets/streak.svg" alt="GitHub streak" height="170"></td>
   </tr>
 </table>
 

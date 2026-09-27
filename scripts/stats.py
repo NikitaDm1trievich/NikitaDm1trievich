@@ -1,4 +1,4 @@
-"""Generate monochrome GitHub stats cards (assets/stats.svg, assets/graph.svg).
+"""Generate monochrome GitHub stats cards (assets/stats.svg, streak.svg, graph.svg).
 
 Runs in GitHub Actions with GITHUB_TOKEN; locally: GITHUB_TOKEN=$(gh auth token) python scripts/stats.py
 """
@@ -19,6 +19,7 @@ QUERY = """
 query($login: String!, $from: DateTime!) {
   user(login: $login) {
     name
+    createdAt
     repositories(ownerAffiliations: OWNER, first: 100, privacy: PUBLIC) {
       totalCount
       nodes { stargazerCount }
@@ -41,9 +42,8 @@ query($login: String!, $from: DateTime!) {
 """
 
 
-def gql():
-    year_start = dt.datetime(dt.date.today().year, 1, 1).isoformat() + "Z"
-    body = json.dumps({"query": QUERY, "variables": {"login": USER, "from": year_start}}).encode()
+def post(query, variables):
+    body = json.dumps({"query": query, "variables": variables}).encode()
     req = urllib.request.Request(
         "https://api.github.com/graphql",
         data=body,
@@ -53,7 +53,88 @@ def gql():
         data = json.load(r)
     if "errors" in data:
         raise SystemExit(data["errors"])
-    return data["data"]["user"]
+    return data["data"]
+
+
+def gql():
+    year_start = dt.datetime(dt.date.today().year, 1, 1).isoformat() + "Z"
+    return post(QUERY, {"login": USER, "from": year_start})["user"]
+
+
+CALENDAR = """
+query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
+    contributionsCollection(from: $from, to: $to) {
+      contributionCalendar { weeks { contributionDays { date contributionCount } } }
+    }
+  }
+}
+"""
+
+
+def history(created_at):
+    """All contribution days since the account was created (API allows one year per query)."""
+    days = {}
+    today = dt.date.today()
+    year = int(created_at[:4])
+    while year <= today.year:
+        data = post(CALENDAR, {"login": USER, "from": f"{year}-01-01T00:00:00Z", "to": f"{year}-12-31T23:59:59Z"})
+        cal = data["user"]["contributionsCollection"]["contributionCalendar"]
+        for w in cal["weeks"]:
+            for d in w["contributionDays"]:
+                if d["date"] <= today.isoformat():
+                    days[d["date"]] = d["contributionCount"]
+        year += 1
+    return sorted(days.items())
+
+
+def fmt(date):
+    d = dt.date.fromisoformat(date)
+    return f"{d:%b} {d.day}" if d.year == dt.date.today().year else f"{d:%b} {d.day}, {d.year}"
+
+
+def streak_card(days, created_at):
+    total = sum(c for _, c in days)
+    longest, run, run_start, best = 0, 0, None, (None, None)
+    for date, c in days:
+        if c:
+            run += 1
+            run_start = run_start or date
+            if run > longest:
+                longest, best = run, (run_start, date)
+        else:
+            run, run_start = 0, None
+    # current streak: today may still be empty, so start counting from yesterday in that case
+    cur, end = 0, len(days) - 1
+    if days and days[end][1] == 0:
+        end -= 1
+    i = end
+    while i >= 0 and days[i][1]:
+        cur += 1
+        i -= 1
+    cur_range = f"{fmt(days[i + 1][0])} – {fmt(days[end][0])}" if cur else "—"
+    best_range = f"{fmt(best[0])} – {fmt(best[1])}" if longest else "—"
+    first = next((d for d, c in days if c), created_at[:10])
+    circ = 2 * 3.14159 * 40
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="467" height="195" viewBox="0 0 467 195" font-family="{FONT}">
+  <rect x="0.5" y="0.5" width="466" height="194" rx="4.5" fill="{BG}" stroke="{BORDER}"/>
+  <line x1="155" y1="28" x2="155" y2="167" stroke="{BORDER}"/>
+  <line x1="311" y1="28" x2="311" y2="167" stroke="{BORDER}"/>
+  <g text-anchor="middle">
+    <text x="78" y="88" fill="{FG}" font-size="28" font-weight="700">{total}</text>
+    <text x="78" y="118" fill="{MUTED}" font-size="12">Total Contributions</text>
+    <text x="78" y="142" fill="#8b949e" font-size="10">{fmt(first)} – Present</text>
+    <circle cx="233" cy="78" r="40" fill="none" stroke="{FG}" stroke-width="5" stroke-dasharray="{circ * 0.82:.1f} {circ:.1f}" transform="rotate(-60 233 78)"/>
+    <text x="233" y="42" fill="{FG}" font-size="18">▲</text>
+    <text x="233" y="88" fill="{FG}" font-size="28" font-weight="700">{cur}</text>
+    <text x="233" y="142" fill="{FG}" font-size="12" font-weight="700">Current Streak</text>
+    <text x="233" y="162" fill="#8b949e" font-size="10">{cur_range}</text>
+    <text x="389" y="88" fill="{FG}" font-size="28" font-weight="700">{longest}</text>
+    <text x="389" y="118" fill="{MUTED}" font-size="12">Longest Streak</text>
+    <text x="389" y="142" fill="#8b949e" font-size="10">{best_range}</text>
+  </g>
+</svg>
+"""
 
 
 def stats_card(u):
@@ -131,7 +212,12 @@ def graph_card(u, days=31):
 def main():
     u = gql()
     os.makedirs(OUT, exist_ok=True)
-    for name, svg in (("stats.svg", stats_card(u)), ("graph.svg", graph_card(u))):
+    cards = (
+        ("stats.svg", stats_card(u)),
+        ("streak.svg", streak_card(history(u["createdAt"]), u["createdAt"])),
+        ("graph.svg", graph_card(u)),
+    )
+    for name, svg in cards:
         with open(os.path.join(OUT, name), "w", encoding="utf-8") as f:
             f.write(svg)
 
